@@ -1,0 +1,10 @@
+# Utiliza la imagen oficial de MySQL como base
+FROM mysql:latest
+
+# Variables de entorno para configurar la base de datos
+ENV MYSQL_ROOT_PASSWORD=12345
+ENV MYSQL_DATABASE=caso1db
+ENV MYSQL_USER=root
+
+# Copia el script SQL para crear la tabla de productos
+COPY init.sql /docker-entrypoint-initdb.d/
