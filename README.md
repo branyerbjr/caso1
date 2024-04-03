@@ -1,6 +1,6 @@
 ### Construimos las imagenes
-docker build -t caso1dev .
-docker build -t caso1-mysql -f Dockerfile-mysql .
+- docker build -t caso1dev .
+- docker build -t caso1-mysql -f Dockerfile-mysql .
 
 ### creamos red
 docker network create caso1-red
